@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Scrollbar dark */
+  .scrollbar-dark {
+    scrollbar-width: thin;
+    scrollbar-color: #1e2b3c transparent;
+  }
+  .scrollbar-dark::-webkit-scrollbar { width: 4px; }
+  .scrollbar-dark::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-dark::-webkit-scrollbar-thumb { background: #1e2b3c; border-radius: 2px; }
+
+  /* Scrollbar light */
+  .scrollbar-light {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  .scrollbar-light::-webkit-scrollbar { width: 4px; }
+  .scrollbar-light::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-light::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+}

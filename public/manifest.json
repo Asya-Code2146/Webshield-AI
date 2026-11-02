@@ -1,0 +1,18 @@
+{
+  "name": "WebShield AI - Autonomous Cyber Security Intelligence",
+  "short_name": "WebShield AI",
+  "description": "Next-Gen Enterprise Vulnerability Scanner & Security Telemetry Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F17",
+  "theme_color": "#0B0F17",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
