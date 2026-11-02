@@ -391,16 +391,23 @@ Format respon JSON murni:
       analysisData = buildFallbackAudit(targetUrl, telemetry);
     }
 
-    const savedHistory = await prisma.scanHistory.create({
-      data: {
-        targetUrl,
-        score: analysisData.score,
-        grade: analysisData.grade,
-        results: analysisData,
-      },
-    });
+    let savedHistory = null;
+    try {
+      if (prisma) {
+        savedHistory = await prisma.scanHistory.create({
+          data: {
+            targetUrl,
+            score: analysisData.score,
+            grade: analysisData.grade,
+            results: analysisData,
+          },
+        });
+      }
+    } catch {
+      // Database not available, continue without saving
+    }
 
-    return NextResponse.json({ success: true, data: savedHistory });
+    return NextResponse.json({ success: true, data: savedHistory ?? { targetUrl, ...analysisData } });
   } catch (error: unknown) {
     const errorMessage = error instanceof Error ? error.message : 'Gagal memproses scanning target';
     return NextResponse.json({ success: false, message: errorMessage }, { status: 500 });

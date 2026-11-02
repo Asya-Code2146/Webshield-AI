@@ -3,6 +3,14 @@ import { prisma } from '../../../lib/prisma';
 
 export async function GET() {
   try {
+    if (!prisma) {
+      return NextResponse.json({
+        success: true,
+        data: [],
+        message: 'Database not configured',
+      });
+    }
+
     const histories = await prisma.scanHistory.findMany({
       orderBy: { createdAt: 'desc' },
       take: 10,
