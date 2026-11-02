@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+  <h1>🛡️ WEBSHIELD AI</h1>
+  <p><b>Autonomous Cyber Defense & Vulnerability Intelligence Suite</b></p>
 
-First, run the development server:
+  [![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+  [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+  [![NextAuth.js](https://img.shields.io/badge/NextAuth.js-purple?style=for-the-badge&logo=react&logoColor=white)](https://next-auth.js.org/)
 
+  <br />
+
+  <i>Solusi pemindaian dan analisis kerentanan keamanan siber berbasis AI dengan antarmuka Cyber Dark Mode & Telemetry Logs real-time. Didesain khusus untuk Kartika Cyber Hackathon 2026.</i>
+
+  ---
+</div>
+
+## 📌 Ikhtisar Proyek
+
+**WebShield AI** adalah platform *defensive reconnaissance* dan *heuristics risk analysis* berbasis web yang dirancang untuk membantu pengembang dan profesional siber mengaudit ketahanan server web mereka. Menggunakan integrasi AI cerdas, WebShield AI memindai celah keamanan sesuai standar OWASP dan menyajikannya dalam dua bentuk: **Laporan Bahasa Manusia yang Mudah Dipahami** dan **Data Mentah JSON**.
+
+---
+
+## 🚀 Fitur Utama
+
+- 🛡️ **Automated OWASP Audit**: Memindai header keamanan penting seperti `Content-Security-Policy (CSP)`, `HSTS`, `X-Frame-Options`, `X-Content-Type-Options`, dan `Server Banner Disclosure`.
+- 🤖 **AI-Powered Threat Analysis**: Analisis risiko mendalam yang menerjemahkan bahasa teknis kompleks menjadi rekomendasi tindakan yang dapat dipahami.
+- 💻 **Cyber Terminal Dashboard**: Antarmuka visual intuitif bertema *Cyber Dark Mode* tanpa garis melelahkan, dilengkapi dukungan log telemetri dan badge status langsung.
+- 🔑 **Multi-Auth System**: Dukungan autentikasi berbasis Google OAuth 2.0 dan *credentials login* aman via NextAuth.js.
+- 📄 **Raw JSON Export**: Menyediakan data telemetri mentah untuk kebutuhan ekspor, integrasi *pipeline* CI/CD, atau repositori *pentesting*.
+
+---
+
+## 🛠️ Stack Teknologi
+
+| Komponen | Teknologi yang Digunakan |
+| :--- | :--- |
+| **Framework** | Next.js (App Router) & React |
+| **Bahasa** | TypeScript |
+| **Styling** | Tailwind CSS (Custom Cyber Theme) |
+| **Autentikasi** | NextAuth.js (Google Provider & Credentials) |
+| **Database & ORM** | Supabase & Prisma ORM |
+| **AI Engine** | Gemini AI Security Analysis Engine |
+
+---
+
+## ⚙️ Panduan Instalasi & Pengoperasian
+
+### 1. Klon Repositori
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone [https://github.com/USERNAME_KAMU/webshield-ai.git](https://github.com/USERNAME_KAMU/webshield-ai.git)
+cd webshield-ai
